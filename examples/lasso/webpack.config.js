@@ -1,12 +1,12 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    app: './src/app.js'
+  },
   output: {
-    filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    library: 'PST',
-    libraryTarget: 'umd'
+    filename: 'app.bundle.js',
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -21,14 +21,6 @@ module.exports = {
         }
       }
     ]
-  },
-  externals: {
-    paper: {
-      commonjs: 'paper',
-      commonjs2: 'paper',
-      amd: 'paper',
-      root: 'paper'
-    }
   },
   stats: {
     colors: true
