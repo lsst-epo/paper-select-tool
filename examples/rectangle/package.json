@@ -1,5 +1,5 @@
 {
-  "name": "paper-select-tool-lasso-example",
+  "name": "paper-select-tool-rectangle-example",
   "version": "0.1.6",
   "description": "Paper.js based selection tool example.",
   "browser": "./dist/app.bundle.js",
