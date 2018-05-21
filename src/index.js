@@ -71,7 +71,7 @@ export let settings = new Settings();
 export function hitsFilter(points) {
   var hits = [];
   points.forEach(function(p) {
-    h = settings.scope.hitTest(p['point']);
+    h = settings.scope.project.hitTest(p['point']);
     if (h) {
       hits.push(p);
     }

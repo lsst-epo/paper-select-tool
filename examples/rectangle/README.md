@@ -1,6 +1,6 @@
-# paper-select-tool-circle-example
+# paper-select-tool-rectangle-example
 
-A [Paper.js](http://paperjs.org/) based selection tool example using the circle tool.
+A [Paper.js](http://paperjs.org/) based selection tool example using the rectangle tool.
 
 Usage
 -----

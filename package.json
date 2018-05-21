@@ -1,6 +1,6 @@
 {
   "name": "paper-select-tool",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "Paper.js based selection tool.",
   "browser": "./dist/bundle.js",
   "main": "./dist/bundle.js",
