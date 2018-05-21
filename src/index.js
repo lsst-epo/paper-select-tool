@@ -68,10 +68,10 @@ class Settings {
 }
 export let settings = new Settings();
 
-export function hitsFilter(points) {
+export function pointsFilter(points) {
   var hits = [];
   points.forEach(function(p) {
-    h = settings.scope.project.hitTest(p['point']);
+    var h = settings.scope.project.hitTest(p['point']);
     if (h) {
       hits.push(p);
     }
