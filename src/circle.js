@@ -2,11 +2,10 @@
 
 import * as paper from 'paper';
 
-import { settings } from './index.js';
-
-export default function rectangleInit(canvas) {
+export default function circleInit(settings, canvas) {
   if (!canvas) canvas = document.createElement('canvas');
-  var ps = paper.default.setup(canvas);
+  var ps = new paper.default.PaperScope();
+  ps.setup(canvas);
   settings.scope = ps;
   var path1,
     point1,
@@ -88,7 +87,7 @@ export default function rectangleInit(canvas) {
     path1.fullySelected = true;
   };
 
-  console.debug('Select Cricle Added!');
+  console.debug('Select Circle Added!');
   ps.project.view.draw();
   return ps;
 }

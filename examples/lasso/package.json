@@ -1,6 +1,6 @@
 {
   "name": "paper-select-tool-lasso-example",
-  "version": "0.1.8",
+  "version": "0.2.9",
   "description": "Paper.js based selection tool example.",
   "browser": "./dist/app.bundle.js",
   "main": "./dist/app.bundle.js",
@@ -31,7 +31,7 @@
     "http-server": "^0.11.1",
     "npm": "^6.0.1",
     "paper": "^0.11.5",
-    "paper-select-tool": "^0.1.8"
+    "paper-select-tool": "^0.2.9"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",

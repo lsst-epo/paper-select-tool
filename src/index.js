@@ -9,7 +9,7 @@ export const rectangle = rectangleInit;
 import circleInit from './circle';
 export const circle = circleInit;
 
-class Settings {
+export class Settings {
   constructor() {
     this.alpha = 0.2;
     this.lightness = 0.28;
@@ -66,9 +66,8 @@ class Settings {
     this._strokeColor = strokeColor;
   }
 }
-export let settings = new Settings();
 
-export function pointsFilter(points) {
+export function pointsFilter(settings, points) {
   var hits = [];
   points.forEach(function(p) {
     var h = settings.scope.project.hitTest(p['point']);

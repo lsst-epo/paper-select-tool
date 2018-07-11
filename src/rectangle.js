@@ -2,13 +2,11 @@
 
 import * as paper from 'paper';
 
-import { settings } from './index.js';
-
-export default function rectangleInit(canvas) {
+export default function rectangleInit(settings, canvas) {
   if (!canvas) canvas = document.createElement('canvas');
-  var ps = paper.default.setup(canvas);
+  var ps = new paper.default.PaperScope();
+  ps.setup(canvas);
   settings.scope = ps;
-
   var path1,
     point1,
     path2,

@@ -8,5 +8,6 @@ window.onload = function() {
   core.style.width = '100vw';
   core.height = document.body.height;
   core.width = document.body.width;
-  pst.circle(core);
-}
+  var settings = pst.Settings();
+  pst.circle(settings, core);
+};
