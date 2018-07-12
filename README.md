@@ -23,15 +23,16 @@ To use it, import it and use one of the selection tools.
 ```javascript
 import * as pst from 'paper-select-tool';
 
-var core = document.getElementById('core');
-var project;
+var core = document.getElementById('core'),
+    settings;
 window.onload = function() {
-  pst.lasso(core);
+  settings = Settings();
+  pst.lasso(settings, core);
 }
 // ...
 var things = [{ point: new paper.Point(100, 100),
                 id: 'big bada boom' }];
-var inSelection = pst.hitFilter(things);
+var inSelection = pst.pointsFilter(settings, things);
 // returns the filtered collection of objects with points in the selection.
 ```
 
